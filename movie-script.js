@@ -1,5 +1,3 @@
-// 8f217cc3f1fc089564adde5523a50099
-// movie DB key
 $(document).ready(function () {
   var api_key = "8f217cc3f1fc089564adde5523a50099";
   var mainURL = `https://api.themoviedb.org/3/discover/movie/?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&with_genres=`;
@@ -8,14 +6,7 @@ $(document).ready(function () {
   $(".movie-moods").on("click", function () {
     var genreEl = $(this).val();
     var queryURL = `${mainURL}${genreEl}`;
-    var cachedData = getCachedData();
-    var cachedMovies = cachedData.movies;
-
-    if (cachedMovies && cachedMovies.results.length) {
-        renderMovies(cachedMovies, 5);
-    } else {
-        ajaxMovieCall(queryURL);
-    }
+    ajaxMovieCall(queryURL);
   });
 
   function ajaxMovieCall(queryURL) {
@@ -25,34 +16,12 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
       console.log(response.results[0].poster_path);
-      saveMoviesInCache(response);
       renderMovies(response, 5);
+
     });
   }
-});
 
-function renderMovies (movies, length) {
-    cleanMoviesList();
-
-    for (var i = 0; i < length; i++) {
-        var randomMovie = getRandomMovie(movies);
-        renderMovie(randomMovie);
-    }
-}
-
-function getRandomMovie (movies) {
-    var randomNumber = Math.floor(Math.random() * movies.results.length);
-    var movie = movies.results[randomNumber];
-
-    return movie;
-}
-
- function cleanMoviesList (movie) {
-    var moviesList = $("#movies-list");
-    moviesList.empty();
- }
-
- function renderMovie (movie) {
+  function renderMovie (movie) {
     var posterImageCode = movie.poster_path;
     var posterImageURL = `https://image.tmdb.org/t/p/w500/${posterImageCode}`;
     var titleMovie = movie.title;
@@ -75,66 +44,24 @@ function getRandomMovie (movies) {
 
     moviesList.append(movieContent);
  }
+  function cleanMoviesList (movie) {
+    var moviesList = $("#movies-list");
+    moviesList.empty();
+ }
 
- //function to get info from local storage
- function getCachedData() {
-    var data = localStorage.getItem("data");
-    if (data) {
-      data = JSON.parse(data);
-    } else {
-      data = {};
+  function getRandomMovie (movies) {
+    var randomNumber = Math.floor(Math.random() * movies.results.length);
+    var movie = movies.results[randomNumber];
+
+    return movie;
+}
+
+  function renderMovies (movies, length) {
+    cleanMoviesList();
+
+    for (var i = 0; i < length; i++) {
+        var randomMovie = getRandomMovie(movies);
+        renderMovie(randomMovie);
     }
-    return data;
-  }
-  //function to save info in local storage
-  function saveMoviesInCache(movies) {
-    var data = getCachedData();
-    data.movies = movies;
-
-    localStorage.setItem("data", JSON.stringify(data));
-  }
-
-  function saveGamesInCache(data) {
-    var data = getCachedData();
-    data.games = games;
-
-    localStorage.setItem("data", JSON.stringify(data));
-  }
-
-// action 28
-
-// animated 16
-
-// documentary 99
-
-// drama 18
-
-// family 10751
-
-// fantasy 14
-
-// history 36
-
-// comedy 35
-
-// war 10752
-
-// crime 80
-
-// music 10402
-
-// mystery 9648
-
-// romance 10749
-
-// sci fi 878
-
-// horror 27
-
-// TV movie 10770
-
-// thriller 53
-
-// western 37
-
-// adventure 12
+}
+});
