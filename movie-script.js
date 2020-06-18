@@ -27,7 +27,6 @@ $(document).ready(function () {
     var titleMovie = movie.title;
     var overviewMovie = movie.overview;
     var releaseMovie = movie.release_date;
-    $("#movies-list").attr("class", "card-img-top")
     var ratingMovie = movie.vote_average;
     var moviesList = $("#movies-list");
 
@@ -36,10 +35,10 @@ $(document).ready(function () {
                 <img id="movie-poster" class="card-img-top" src="${posterImageURL}" alt="poster1" />
             </div>
             <div class="card-body">
-            <h2  class="card-title" id="title-movie">${titleMovie}</h2><br>
-            <h3 class="card-text" id="rating-movie">${ratingMovie}</h3><br>
-            <p id="overview-movie">${overviewMovie}</p><br>
-            <p id="release-movie">${releaseMovie}</p>
+            <h2  class="card-title" id="title-movie">${titleMovie}</h2>
+            <h5 id="overview-movie">${overviewMovie}</h5>
+            <h3 class="card-text" id="rating-movie">Rating: ${ratingMovie}</h3>
+            <h3 id="release-movie" class="card-text">${releaseMovie}</h3>
             </div>
         </div>
     `);
