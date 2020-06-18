@@ -16,7 +16,7 @@ $(document).ready(function () {
     }).then(function (response) {
       console.log(response);
       console.log(response.results[0].poster_path);
-      renderMovies(response, 5);
+      renderMovies(response, 1);
 
     });
   }
@@ -27,18 +27,20 @@ $(document).ready(function () {
     var titleMovie = movie.title;
     var overviewMovie = movie.overview;
     var releaseMovie = movie.release_date;
+    $("#movies-list").attr("class", "card-img-top")
     var ratingMovie = movie.vote_average;
     var moviesList = $("#movies-list");
 
     var movieContent = $(`
-        <div>
-            <div>
-                <img id="movie-poster" src="${posterImageURL}" alt="poster1" />
+            <div class="card" style="width: 18rem;">
+                <img id="movie-poster" class="card-img-top" src="${posterImageURL}" alt="poster1" />
             </div>
-            <h2 id="title-movie">${titleMovie}</h2><br>
-            <h3 id="rating-movie">${ratingMovie}</h3><br>
+            <div class="card-body">
+            <h2  class="card-title" id="title-movie">${titleMovie}</h2><br>
+            <h3 class="card-text" id="rating-movie">${ratingMovie}</h3><br>
             <p id="overview-movie">${overviewMovie}</p><br>
             <p id="release-movie">${releaseMovie}</p>
+            </div>
         </div>
     `);
 
