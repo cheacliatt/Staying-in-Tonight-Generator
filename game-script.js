@@ -6,12 +6,13 @@ $(document).ready(function () {
 
   // random page number
   $('.game-moods').on('click', function () {
-    var gameTag = $('.game-moods').val();
+    //checks for id of button pressed, ids=genre tags
+    var gameTag = $(this).attr('id');
     var queryURL =
       'https://api.rawg.io/api/games?tags=' +
       gameTag +
-      '&page=' +
-      [Math.floor(Math.random() * 50)];
+      '&page_size=20&page=' +
+      [Math.floor(Math.random() * 30)]; // random page of games fitting the genre
     console.log(gameTag);
     ajaxGameCall(queryURL);
   });
@@ -22,11 +23,11 @@ $(document).ready(function () {
       method: 'GET',
     }).then(function (response) {
       console.log(response);
-
+      //chooses a game at random from the page
       var gameChoice = response.results[Math.floor(Math.random() * 20)]; // random game from random page
       console.log(gameChoice);
-      console.log(gameChoice.background_image); ///screenshot src url
-
+      console.log(gameChoice.background_image); 
+// key art for game, equivalent to movie poster.
       var gameImage = gameChoice.background_image;
       $('#screenshot').attr('src', gameImage);
     });
