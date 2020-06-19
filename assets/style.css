@@ -2,6 +2,7 @@ body {
     background-image: url(https://allthingsd.com/files/2013/09/valve.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 .card-body {
