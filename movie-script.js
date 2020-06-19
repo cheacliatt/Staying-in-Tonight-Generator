@@ -37,6 +37,7 @@ $(document).ready(function () {
 // dynamically creating card and text
     var movieContent = $(`
             <div class="card">
+            <h2   class="general-title"> Movies</h2>
                 <img id="movie-poster" class="card-img" src="${posterImageURL}" alt="poster1" />
             </div>
             <div class="card-body rounded text-white">
