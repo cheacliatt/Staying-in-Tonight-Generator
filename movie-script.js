@@ -21,7 +21,7 @@ $(document).ready(function () {
   }
 
   function renderMovie(movie) {
-    var posterImageCode = movie.poster_path;
+    var posterImageCode = movie.backdrop_path;
     var posterImageURL = `https://image.tmdb.org/t/p/w500/${posterImageCode}`;
     var titleMovie = movie.title;
     var overviewMovie = movie.overview;

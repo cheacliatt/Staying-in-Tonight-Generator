@@ -83,6 +83,7 @@ header a, a:visited {
 .stars {
   background:#000 url(images/stars.png) repeat top center;
   z-index:-1;
+
 }
 
 .twinkling{
