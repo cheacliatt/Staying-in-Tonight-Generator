@@ -13,6 +13,12 @@ $(document).ready(function () {
     $.ajax({
       url: queryURL,
       method: 'GET',
+      success: function(response) {
+        console.log(response);
+      },
+      error: function(response) {
+        console.log(response);
+      }
     }).then(function (response) {
       console.log(response);
       console.log(response.results[0].poster_path);
