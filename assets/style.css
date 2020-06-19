@@ -4,6 +4,9 @@ body {
     background-attachment: fixed;
 }
 
+.card-body {
+    background-color: rgba(128, 128, 128, 0.719);
+}
 h2 {
     font-family: 'Hind Madurai', sans-serif;
 }
@@ -21,4 +24,10 @@ h1 {
     image-resolution: 50dpi;
 }
 
+
+.btn{
+    background-color: rgba(4, 4, 110, 0.932);
+    border-radius: 20px; 
+    margin-bottom: 10px;
+}
 

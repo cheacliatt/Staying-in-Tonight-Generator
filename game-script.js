@@ -35,7 +35,7 @@ $(document).ready(function () {
       <div class="card">
           <img id="game-poster" class="card-img" style="image-resolution:50dpi" src="${gameImageCode}" alt="game_cover" />
       </div>
-      <div class="card-body text-white">
+      <div class="card-body rounded text-white">
         <h2 class="card-title" id="title-game">${titleGame}</h2>
 
         <h3 class="card-text" id="rating-game">Rating: ${ratingGame}/5</h3>
