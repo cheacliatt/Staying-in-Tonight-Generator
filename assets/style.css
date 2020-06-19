@@ -19,6 +19,11 @@ h5 {
 h1 {
     font-family: 'Yeseva One', cursive;
 }
+/* trying to shrink image size to hopefully load faster*/
+#game-poster {
+    image-resolution: 50dpi;
+}
+
 
 .btn{
     background-color: rgba(4, 4, 110, 0.932);
