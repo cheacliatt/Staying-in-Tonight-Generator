@@ -37,8 +37,15 @@ h1 {
   image-resolution: 50dpi;
 }
 
-.btn {
-  background-color: rgba(4, 4, 110, 0.932);
-  border-radius: 20px;
-  margin-bottom: 10px;
+
+.btn-lg {
+    background-color: #250066;
+    border-radius: 20px; 
+    border-color: #985CFF;
+    margin-bottom: 10px;
 }
+.btn-lg:hover, .btn-lg:focus, .btn-lg:active {
+    background-color: #985cff;
+    border-color: #985Cff; 
+}
+
