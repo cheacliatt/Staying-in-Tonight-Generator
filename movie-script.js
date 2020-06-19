@@ -2,13 +2,13 @@ $(document).ready(function () {
   var api_key = '8f217cc3f1fc089564adde5523a50099';
   var mainURL = `https://api.themoviedb.org/3/discover/movie/?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&with_genres=`;
 
-  //comedy button
+  //listener to movie button
   $('.movie-moods').on('click', function () {
     var genreEl = $(this).val();
     var queryURL = `${mainURL}${genreEl}`;
     ajaxMovieCall(queryURL);
   });
-
+// call function
   function ajaxMovieCall(queryURL) {
     $.ajax({
       url: queryURL,
@@ -19,7 +19,7 @@ $(document).ready(function () {
       renderMovies(response, 1);
     });
   }
-
+//fuction that renders movie
   function renderMovie(movie) {
     var posterImageCode = movie.backdrop_path;
     var posterImageURL = `https://image.tmdb.org/t/p/w500/${posterImageCode}`;
@@ -28,7 +28,7 @@ $(document).ready(function () {
     var releaseMovie = movie.release_date;
     var ratingMovie = movie.vote_average;
     var moviesList = $('#movies-list');
-
+// dynamically creating card and text
     var movieContent = $(`
             <div class="card">
                 <img id="movie-poster" class="card-img" src="${posterImageURL}" alt="poster1" />
@@ -43,18 +43,19 @@ $(document).ready(function () {
 
     moviesList.append(movieContent);
   }
+  
   function cleanMoviesList(movie) {
     var moviesList = $('#movies-list');
     moviesList.empty();
   }
-
+//generating random number
   function getRandomMovie(movies) {
     var randomNumber = Math.floor(Math.random() * movies.results.length);
     var movie = movies.results[randomNumber];
 
     return movie;
   }
-
+//for loop if user would like to display more than one movie
   function renderMovies(movies, length) {
     cleanMoviesList();
 
