@@ -17,3 +17,9 @@ h1 {
     font-family: 'Yeseva One', cursive;
 }
 
+.btn{
+    background-color: rgba(4, 4, 110, 0.932);
+    border-radius: 20px; 
+    margin-bottom: 10px;
+}
+
