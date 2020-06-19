@@ -6,9 +6,8 @@ $(document).ready(function () {
     var queryURL =
       'https://api.rawg.io/api/games?tags=' +
       gameTag +
-      '&page_size=20&page=' +
-      [Math.floor(Math.random() * 30)]; // random page of games fitting the genre
-    console.log(gameTag);
+      '&ordered-=added&page_size=20&page=' +
+      [Math.floor(Math.random() * 15)]; // random page of games fitting the genre
     ajaxGameCall(queryURL);
   });
 
@@ -17,7 +16,6 @@ $(document).ready(function () {
       url: queryURL,
       method: 'GET',
     }).then(function (response) {
-      console.log(response);
       //chooses a game at random from the page
       var gameChoice = response.results[Math.floor(Math.random() * 20)]; // random game from random page
       console.log(gameChoice);
@@ -35,7 +33,7 @@ $(document).ready(function () {
 
     var gameContent = $(`
       <div class="card">
-          <img id="game-poster" class="card-img" src="${gameImageCode}" alt="game_cover" />
+          <img id="game-poster" class="card-img" style="image-resolution:50dpi" src="${gameImageCode}" alt="game_cover" />
       </div>
       <div class="card-body text-white">
         <h2 class="card-title" id="title-game">${titleGame}</h2>
