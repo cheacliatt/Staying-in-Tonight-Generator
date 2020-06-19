@@ -4,13 +4,17 @@
     <title>Stayin in Tonight</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Yeseva+One&display=swap"
       rel="stylesheet"
@@ -25,17 +29,26 @@
 
   <body>
     <div class="container">
-      <div class="row justify-content-center">
-        <!-- <div class="col"> -->
 
-        <h1 class="glow text-center my-5">Staying In Tonight</h1>
+      <div class="row justify-content-center header-main">
+        <!-- <div class="col"> -->
+       <h1 class="glow text-center my-5">Staying In Tonight</h1>
+
+
       </div>
+      <div class="row justify-content-center header-main">
+        <!-- <div class="col"> -->
+        <h4 class="text-white text-center" id="directions">
+          What are you in the mood for?
+        </h4>
+      </div>
+
       <div class="row mb-5 justify-content-center">
         <button
           type="button"
           value="35"
           id="comedy"
-          class="btn btn-primary movie-moods game-moods mx-5"
+          class="btn btn-lg btn-primary movie-moods game-moods mx-5"
         >
           Comedy
         </button>
@@ -43,7 +56,7 @@
           type="button"
           value="28"
           id="action-adventure"
-          class="btn btn-primary movie-moods game-moods mx-5"
+          class="btn btn-lg btn-primary movie-moods game-moods mx-5"
         >
           Action
         </button>
@@ -51,7 +64,7 @@
           type="button"
           value="27"
           id="horror"
-          class="btn btn-primary movie-moods game-moods mx-5"
+          class="btn btn-lg btn-primary movie-moods game-moods mx-5"
         >
           Horror
         </button>
@@ -59,7 +72,7 @@
           type="button"
           value="18"
           id="story-rich"
-          class="btn btn-primary movie-moods game-moods mx-5"
+          class="btn btn-lg btn-primary movie-moods game-moods mx-5"
         >
           Drama
         </button>
@@ -67,7 +80,7 @@
           type="button"
           value="10751"
           id="family-friendly"
-          class="btn btn-primary movie-moods game-moods mx-5"
+          class="btn btn-lg btn-primary movie-moods game-moods mx-5"
         >
           Family
         </button>
