@@ -3,3 +3,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.card-body {
+    background-color: rgba(128, 128, 128, 0.719);
+}

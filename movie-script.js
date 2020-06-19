@@ -33,7 +33,7 @@ $(document).ready(function () {
             <div class="card">
                 <img id="movie-poster" class="card-img" src="${posterImageURL}" alt="poster1" />
             </div>
-            <div class="card-body text-white">
+            <div class="card-body rounded text-white">
             <h2  class="card-title" id="title-movie">${titleMovie}</h2>
             <h5 id="overview-movie">${overviewMovie}</h5>
             <h3 class="card-text" id="rating-movie">Rating: ${ratingMovie}</h3>
