@@ -1,10 +1,5 @@
 $(document).ready(function () {
-  //genres
-  // var genreArray= ['action-adventure', 'comedy', 'family-friendly', 'story-rich', 'horror'] - may not need this if ids work
 
-  // currently it is selecting a tag randomly from the array. These should instead correspond to the button ids.
-
-  // random page number
   $('.game-moods').on('click', function () {
     //checks for id of button pressed, ids=genre tags
     var gameTag = $(this).attr('id');
@@ -26,10 +21,36 @@ $(document).ready(function () {
       //chooses a game at random from the page
       var gameChoice = response.results[Math.floor(Math.random() * 20)]; // random game from random page
       console.log(gameChoice);
-      console.log(gameChoice.background_image); 
-// key art for game, equivalent to movie poster.
-      var gameImage = gameChoice.background_image;
-      $('#screenshot').attr('src', gameImage);
+      renderGame(gameChoice);
     });
   }
+
+  function renderGame (game) {
+    var gameImageCode = game.background_image;
+    var titleGame = game.name;
+    // var overviewGame = game.overview; // find endpoint
+    var releaseGame = game.released;
+    var ratingGame = game.rating;
+    var gamesList = $("#games-list");
+
+    var gameContent = $(`
+      <div class="card">
+          <img id="game-poster" class="card-img" src="${gameImageCode}" alt="game_cover" />
+      </div>
+      <div class="card-body text-white">
+        <h2 class="card-title" id="title-game">${titleGame}</h2>
+
+        <h3 class="card-text" id="rating-game">Rating: ${ratingGame}/5</h3>
+        <h3 id="release-movie" class="card-text">${releaseGame}</h3>
+      </div>
+    `);
+    cleanGamesList(game);
+    gamesList.append(gameContent);
+  };
+
+  function cleanGamesList (game) {
+    var gamesList = $("#games-list");
+    gamesList.empty();
+  }
+
 });
