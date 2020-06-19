@@ -1,34 +1,38 @@
 body {
-    background-image: url(https://allthingsd.com/files/2013/09/valve.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+  background-image: url(https://allthingsd.com/files/2013/09/valve.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .card-body {
-    background-color: rgba(128, 128, 128, 0.719);
+  background-color: rgba(128, 128, 128, 0.719);
+}
+
+.card {
+  background-color: rgba(128, 128, 128, 0.719);
+  color: white;
+  text-align: center;
 }
 h2 {
-    font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
 }
 h3 {
-    font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
 }
 h5 {
-    font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
 }
 h1 {
-    font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
 }
 /* trying to shrink image size to hopefully load faster*/
 #game-poster {
-    image-resolution: 50dpi;
+  image-resolution: 50dpi;
 }
 
-
-.btn{
-    background-color: rgba(4, 4, 110, 0.932);
-    border-radius: 20px; 
-    margin-bottom: 10px;
+.btn {
+  background-color: rgba(4, 4, 110, 0.932);
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
-
