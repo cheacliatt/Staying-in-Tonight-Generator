@@ -61,8 +61,7 @@ h1 {
 
   @media only screen and (max-width: 600px) {
     body {
-      width: 100%;
-      height: auto;
+      background-size: auto;
     }
   }
   
