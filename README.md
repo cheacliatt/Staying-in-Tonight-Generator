@@ -34,9 +34,9 @@ The primary usage of this application is to entertain user by offering him or he
 The following screenshot demonstrates the application functionality on desktop and on mobile:
 
 ![Home Page  on desktop demo](./Assets/images/HomePage-desktop.png)
-![Full Page  on desktop demo](./Assets/images/Desktop-view.png)
+![Full Page  on desktop demo](./Assets/images/Desktop_view.png)
 
-![Home Page view on mobile demo](./Assets/images/Assets/images/HomePage-mobile.png)
+![Home Page view on mobile demo](./Assets/images/HomePage-mobile.png)
 ![Full Page view on mobile demo](./Assets/images/Mobile_view.png)
 
 
@@ -45,7 +45,7 @@ The following screenshot demonstrates the application functionality on desktop a
 
 [GitHub repository](https://github.com/cheacliatt/gt-Project-One "Repository")
 
-[Link to Deployed Saying-In-Tonight Application](https://cheacliatt.github.io/gt-Project-One/ "Pages")
+[Link to Deployed Staying-In-Tonight Application](https://cheacliatt.github.io/gt-Project-One/ "Pages")
 
 ## Credits
 
