@@ -25,18 +25,19 @@ This webpage serves as a tool to help user's decide how to spend a night staying
 
 ## Installation
 
-This code can be forked and cloned onto one's local device through GitHub. Please make sure you are using the correction applications for administering this code onto your device, such as Terminal and Visual Studio Code.
+This code can be forked and cloned onto one's local device through GitHub. Please make sure you are using the correct application for administering this code onto your device, such as Terminal and Visual Studio Code.
 
 ## Usage
 
 The primary usage of this application is to entertain user by offering him or her opportunity to whatch a movie or to play a video game based on their mood.
-![Home Page  on desktop demo](./Assets/images/Desktop_view.png)
-![Movies and Games on desktop demo](./Assets/images/movies-games_desktop.png)
-![Home Page view on mobile demo](./Assets/images/Mobile_view.png)
-![Movies on mobile demo](./Assets/images/movies-mobile.png)
-![Games on mobile demo](./Assets/images/games-mobile.png)
 
+The following screenshot demonstrates the application functionality on desktop and on mobile:
 
+![Home Page  on desktop demo](./Assets/images/HomePage-desktop.png)
+![Full Page  on desktop demo](./Assets/images/Desktop-view.png)
+
+![Home Page view on mobile demo](./Assets/images/Assets/images/HomePage-mobile.png)
+![Full Page view on mobile demo](./Assets/images/Mobile_view.png)
 
 
 
@@ -50,8 +51,6 @@ The primary usage of this application is to entertain user by offering him or he
 
 This was a was a group project comlepeted by Stuart Scott, Chea Cliatt, Scott Griffin and Volodymyr Petrytsya.
 
-## Credits
-License free favicon from https://icons8.com/icons/set/favicon-moon.
 
 ## License
 
