@@ -17,7 +17,11 @@
 
 ## Description
 
-This webpage serves as a tool to help user's decide how to spend a night staying at home, by either watching a movie or playing a video game. The user chooses a selection whether they are in the mood to watch a movie or play a game. They then choose what they are in the mood for, such as "Happy", "Sad", etc. After they choose their mood, a poster of a random game/movie will appear below the buttons, featuring a brief overview of the media.
+“Staying in Tonight” serves as a tool to help users make a decision about how to spend a night staying at home, by either watching a movie or playing a video game.
+When the user opens the page, they are met by a series of selectors indicating various genres. These buttons reflect the genre of the content that will be generated upon clicking the corresponding button.
+
+For example, if the user chooses the genre Comedy, the suggestions generated will be under the genre of Comedy, for both video games and movies. A poster of a random game and movie will appear below the buttons, featuring a brief overview of the media, release date, and a critic’s rating.
+
 
 ![picture of rough wireframe on paper](./Assets/images/wireframe-drawing.png)
 
@@ -31,7 +35,7 @@ This code can be forked and cloned onto one's local device through GitHub. Pleas
 
 The primary usage of this application is to entertain user by offering him or her opportunity to whatch a movie or to play a video game based on their mood.
 
-The following screenshot demonstrates the application functionality on desktop and on mobile:
+The following screenshots demonstrates the application functionality on desktop and on mobile:
 
 ![Home Page  on desktop demo](./Assets/images/HomePage-desktop.png)
 ![Full Page  on desktop demo](./Assets/images/Desktop_view.png)
