@@ -9,7 +9,6 @@ body {
 .card-body {
     background-color: rgba(51, 51, 51, 0.856);
     margin-bottom: 30px;
-    
 }
 
 #directions {
@@ -61,6 +60,12 @@ h1 {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-size: auto;
+    }
   }
   
   @-webkit-keyframes glow {

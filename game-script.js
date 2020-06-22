@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  $(".game-moods").on("click", function () {
+  $('.game-moods').on('click', function () {
     //checks for id of button pressed, ids=genre tags
-    var gameTag = $(this).attr("id");
+    var gameTag = $(this).attr('id');
     var queryURL =
-      "https://api.rawg.io/api/games?tags=" +
+      'https://api.rawg.io/api/games?tags=' +
       gameTag +
-      "&ordered-=added&page_size=20&page=" +
+      '&ordered-=added&page_size=20&page=' +
       [Math.floor(Math.random() * 15)]; // random page of games fitting the genre
     ajaxGameCall(queryURL);
   });
@@ -13,23 +13,25 @@ $(document).ready(function () {
   function ajaxGameCall(queryURL) {
     $.ajax({
       url: queryURL,
-      method: "GET",
+      method: 'GET',
     }).then(function (response) {
       //chooses a game at random from the page
       var gameChoice = response.results[Math.floor(Math.random() * 20)]; // random game from random page
       console.log(gameChoice);
+      //Get game's description with additional query
+      var description = gameChoice.description;
+      console.log * description;
       renderGame(gameChoice);
     });
   }
-
+  // connects each variable to a game data endpoint
   function renderGame(game) {
     var gameImageCode = game.background_image;
     var titleGame = game.name;
-    // var overviewGame = game.overview; // find endpoint
     var releaseGame = game.released;
     var ratingGame = game.rating;
-    var gamesList = $("#games-list");
-
+    var gamesList = $('#games-list');
+    // dynamically creates divs for game details
     var gameContent = $(`
       <div class="card">
       <h2   class="general-title-"> Games</h2>
@@ -46,9 +48,9 @@ $(document).ready(function () {
     cleanGamesList(game);
     gamesList.append(gameContent);
   }
-
+ // clears out the previous game once another button is pressed
   function cleanGamesList(game) {
-    var gamesList = $("#games-list");
+    var gamesList = $('#games-list');
     gamesList.empty();
   }
 });
