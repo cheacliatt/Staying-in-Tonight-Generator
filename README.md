@@ -21,6 +21,9 @@ The primary usage of this code is to serve as a weather dashboard.
 
 [GitHub pages](https://cheacliatt.github.io/gt-Project-One/ "Pages")
 
+## Credits
+License free favicon from https://icons8.com/icons/set/favicon-moon.
+
 ## License
 
 MIT License
