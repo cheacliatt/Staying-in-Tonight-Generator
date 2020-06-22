@@ -1,12 +1,27 @@
 # Staying in Tonight
 
+
+![badmath](https://img.shields.io/badge/staying--in--tonight-v%201.0-blue)
+
+![badmath](https://img.shields.io/badge/MIT-license-brightgreen)
+
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Links](#links)
+- [Credits](#credits)
+- [License](#mit_license)
+
 ## Description
+
 This webpage serves as a tool to help user's decide how to spend a night staying at home, by either watching a movie or playing a video game. The user chooses a selection whether they are in the mood to watch a movie or play a game. They then choose what they are in the mood for, such as "Happy", "Sad", etc. After they choose their mood, a poster of a random game/movie will appear below the buttons, featuring a brief overview of the media.
 
 ![picture of rough wireframe on paper](Assets/wireframe-1.jpg)
 
 ![picture of wireframe designed on InVision](Assets/InVision-wireframe-1.jpg)
-
 
 ## Installation
 
@@ -14,18 +29,32 @@ This code can be forked and cloned onto one's local device through GitHub. Pleas
 
 ## Usage
 
-The primary usage of this code is to serve as a weather dashboard.
+The primary usage of this application is to entertain user by offering him or her opportunity to whatch a movie or to play a video game based on their mood.
+![Home Page  on desktop demo](./Assets/images/Desktop_view.png)
+![Movies and Games on desktop demo](./Assets/images/movies-games_desktop.png)
+![Home Page view on mobile demo](./Assets/images/Mobile_view.png)
+![Movies on mobile demo](./Assets/images/movies-mobile.png)
+![Games on mobile demo](./Assets/images/games-mobile.png)
+
+
+
+
 
 ## Links
+
 [GitHub repository](https://github.com/cheacliatt/gt-Project-One "Repository")
 
-[GitHub pages](https://cheacliatt.github.io/gt-Project-One/ "Pages")
+[Link to Deployed Saying-In-Tonight Application](https://cheacliatt.github.io/gt-Project-One/ "Pages")
+
+## Credits
+
+This was a was a group project comlepeted by Stuart Scott, Chea Cliatt, Scott Griffin and Volodymyr Petrytsya.
 
 ## License
 
 MIT License
 
-Copyright (c) [2020] [Chea Cliatt, Scott Griffin, Stuart Scott, Volodymyr Petrytsya]
+Copyright (c) [2020][chea cliatt, scott griffin, stuart scott, volodymyr petrytsya]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
