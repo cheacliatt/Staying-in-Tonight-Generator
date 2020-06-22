@@ -5,27 +5,28 @@ $(document).ready(function () {
   //listener to movie button
   $('.movie-moods').on('click', function () {
     var genreEl = $(this).val();
-    var queryURL = `${mainURL}${genreEl}` + '&page=' + [Math.floor(Math.random() * 9 + 1)];
+    var queryURL =
+      `${mainURL}${genreEl}` + '&page=' + [Math.floor(Math.random() * 9 + 1)];
     ajaxMovieCall(queryURL);
   });
-// call function
+  // call function
   function ajaxMovieCall(queryURL) {
     $.ajax({
       url: queryURL,
       method: 'GET',
-      success: function(response) {
+      success: function (response) {
         console.log(response);
       },
-      error: function(response) {
+      error: function (response) {
         console.log(response);
-      }
+      },
     }).then(function (response) {
       console.log(response);
       console.log(response.results[0].poster_path);
       renderMovies(response, 1);
     });
   }
-//fuction that renders movie
+  //fuction that renders movie
   function renderMovie(movie) {
     var posterImageCode = movie.backdrop_path;
     var posterImageURL = `https://image.tmdb.org/t/p/w500/${posterImageCode}`;
@@ -34,7 +35,7 @@ $(document).ready(function () {
     var releaseMovie = movie.release_date;
     var ratingMovie = movie.vote_average;
     var moviesList = $('#movies-list');
-// dynamically creating card and text
+    // dynamically creating card and text
     var movieContent = $(`
             <div class="card">
             <h2   class="general-title"> Movies</h2>
@@ -50,19 +51,19 @@ $(document).ready(function () {
 
     moviesList.append(movieContent);
   }
-  
+
   function cleanMoviesList(movie) {
     var moviesList = $('#movies-list');
     moviesList.empty();
   }
-//generating random number
+  //generating random number
   function getRandomMovie(movies) {
     var randomNumber = Math.floor(Math.random() * movies.results.length);
     var movie = movies.results[randomNumber];
 
     return movie;
   }
-//for loop if user would like to display more than one movie
+  //for loop if user would like to display more than one movie
   function renderMovies(movies, length) {
     cleanMoviesList();
 
