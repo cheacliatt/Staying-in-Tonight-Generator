@@ -19,9 +19,9 @@
 
 This webpage serves as a tool to help user's decide how to spend a night staying at home, by either watching a movie or playing a video game. The user chooses a selection whether they are in the mood to watch a movie or play a game. They then choose what they are in the mood for, such as "Happy", "Sad", etc. After they choose their mood, a poster of a random game/movie will appear below the buttons, featuring a brief overview of the media.
 
-![picture of rough wireframe on paper](Assets/wireframe-1.jpg)
+![picture of rough wireframe on paper](./Assets/images/wireframe-drawing.png)
 
-![picture of wireframe designed on InVision](Assets/InVision-wireframe-1.jpg)
+![picture of wireframe designed on InVision](./Assets/images/wireframe-digital.png)
 
 ## Installation
 
