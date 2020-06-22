@@ -8,16 +8,19 @@ body {
 
 .card-body {
     background-color: rgba(51, 51, 51, 0.856);
+    margin-bottom: 30px;
+    
 }
 
 #directions {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Yeseva One', cursive;
 }
 
 .card {
   background-color: rgba(128, 128, 128, 0.719);
   color: white;
   text-align: center;
+  
 }
 
 h2 {
@@ -39,14 +42,16 @@ h1 {
 
 
 .btn-lg {
+    font-family: "Cooper Black", cursive;
     background-color: #250066;
     border-radius: 20px; 
     border-color: #985CFF;
     margin-bottom: 10px;
+    
 }
 .btn-lg:hover, .btn-lg:focus, .btn-lg:active {
     background-color: #985cff;
-    border-color: #985Cff; 
+    border-color: #985Cff;
 }
 
 .glow {
@@ -65,5 +70,24 @@ h1 {
     
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .directions {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: directions 1s ease-in-out infinite alternate;
+    -moz-animation: directions 1s ease-in-out infinite alternate;
+    animation: directions 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes directions {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #250066, 0 0 40px #250066, 0 0 50px #250066, 0 0 60px #250066, 0 0 70px #250066;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #985cff, 0 0 40px #985cff, 0 0 50px #985cff, 0 0 60px #985cff, 0 0 70px #985cff, 0 0 80px #985cff;
     }
   }
