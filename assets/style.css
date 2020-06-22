@@ -11,7 +11,7 @@ body {
 }
 
 #directions {
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card {
@@ -21,16 +21,16 @@ body {
 }
 
 h2 {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3 {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h5 {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1 {
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* trying to shrink image size to hopefully load faster*/
 #game-poster {
@@ -38,7 +38,7 @@ h1 {
 }
 
 .btn-lg {
-  font-family: 'Cooper Black', cursive;
+  font-family: 'Cooper Black', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #250066;
   border-radius: 10px;
   border-color: #985cff;
