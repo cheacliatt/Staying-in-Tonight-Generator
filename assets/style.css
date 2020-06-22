@@ -43,14 +43,14 @@ h1 {
 .btn-lg {
     font-family: "Cooper Black", cursive;
     background-color: #250066;
-    border-radius: 20px; 
+    border-radius: 10px; 
     border-color: #985CFF;
     margin-bottom: 10px;
     
 }
 .btn-lg:hover, .btn-lg:focus, .btn-lg:active {
     background-color: #985cff;
-    border-color: #985Cff;
+    border-color:#985cff;
 }
 
 .glow {

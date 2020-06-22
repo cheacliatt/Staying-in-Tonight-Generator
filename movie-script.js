@@ -5,7 +5,7 @@ $(document).ready(function () {
   //listener to movie button
   $('.movie-moods').on('click', function () {
     var genreEl = $(this).val();
-    var queryURL = `${mainURL}${genreEl}`;
+    var queryURL = `${mainURL}${genreEl}` + '&page=' + [Math.floor(Math.random() * 9 + 1)];
     ajaxMovieCall(queryURL);
   });
 // call function
