@@ -21,7 +21,6 @@ $(document).ready(function () {
         console.log(response);
       },
     }).then(function (response) {
-      console.log(response);
       console.log(response.results[0].poster_path);
       renderMovies(response, 1);
     });
