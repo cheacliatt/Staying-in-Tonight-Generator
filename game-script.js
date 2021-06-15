@@ -3,7 +3,7 @@ $(document).ready(function () {
   //API KEY
   const gameKey = '03ef63429b0b4373879b19bf85155c0d';
   //
-  const mainGameUrl = 'https://api.rawg.io/api/games?key=' + gameKey + '&tags=';
+  const mainGameUrl = 'https://cors-anywhere.herokuapp.com/' + 'https://api.rawg.io/api/games?key=' + gameKey + '&tags=';
   $('.game-moods').on('click', function () {
     //checks for id of button pressed, ids=genre tags
     var gameTag = $(this).attr('id');
