@@ -38,13 +38,13 @@ $(document).ready(function () {
     var movieContent = $(`
             <div class="card">
             <h2   class="general-title"> Movies</h2>
-                <img id="movie-poster" class="card-img" src="${posterImageURL}" alt="poster1" />
+                <img class="card-img" src="${posterImageURL}" alt="poster1" />
             </div>
             <div class="card-body rounded text-white">
-            <h2  class="card-title" id="title-movie">${titleMovie}</h2>
-            <h5 id="overview-movie">${overviewMovie}</h5>
+            <h2 class="card-title" id="title-movie">${titleMovie}</h2>
+            <h5>${overviewMovie}</h5>
             <h3 class="card-text" id="rating-movie">Rating: ${ratingMovie}</h3>
-            <h3 id="release-movie" class="card-text">${releaseMovie}</h3>
+            <h3 class="card-text">${releaseMovie}</h3>
             </div>
     `);
 

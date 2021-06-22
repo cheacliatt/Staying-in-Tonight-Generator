@@ -1,9 +1,10 @@
 $(document).ready(function () {
   // get new API Key from rawg if this won't work https://rawg.io/apidocs
   //API KEY
-  const gameKey = '03ef63429b0b4373879b19bf85155c0d';
+  const gameAPIKey = '03ef63429b0b4373879b19bf85155c0d';
   //
-  const mainGameUrl = 'https://cors-anywhere.herokuapp.com/' + 'https://api.rawg.io/api/games?key=' + gameKey + '&tags=';
+  const mainGameUrl =
+    'https://api.rawg.io/api/games?key=' + gameAPIKey + '&tags=';
   $('.game-moods').on('click', function () {
     //checks for id of button pressed, ids=genre tags
     var gameTag = $(this).attr('id');
@@ -13,6 +14,7 @@ $(document).ready(function () {
       '&ordered-=added&page_size=20&page=' +
       [Math.floor(Math.random() * 15)]; // random page of games fitting the genre
     ajaxGameCall(queryURL);
+    console.log(queryURL);
   });
 
   function ajaxGameCall(queryURL) {
@@ -27,43 +29,42 @@ $(document).ready(function () {
 
       var gameID = gameChoice.id;
 
-      var gameURL = 'https://api.rawg.io/api/games/' + gameID;
+      var gameURL =
+        'https://api.rawg.io/api/games/' + gameID + '?key=' + gameAPIKey;
 
       $.ajax({
         url: gameURL,
         method: 'GET',
       }).then(function (responseGame) {
-        console.log(responseGame.description_raw);
-        gameDescription(responseGame.description_raw);
+        gameDescription(responseGame.description);
+        console.log(responseGame.description);
       });
     });
   }
 
   function gameDescription(gameInfo) {
-    var gameDescrip = gameInfo;
-    $('#game-description').append(gameDescrip);
-    document.getElementById('game-description').maxLength = '1';
+    $('#game-description').append(gameInfo);
   }
 
   function renderGame(game) {
     var gameImageCode = game.background_image;
     var titleGame = game.name;
-    // var overviewGame = game.overview; // find endpoint
     var releaseGame = game.released;
     var ratingGame = game.rating;
     var gamesList = $('#games-list');
 
     var gameContent = $(`
       <div class="card">
-      <h2   class="general-title-"> Games</h2>
+      <h2  class="general-title-"> Games</h2>
 
           <img id="game-poster" class="card-img" style="image-resolution:50dpi" src="${gameImageCode}" alt="game_cover" />
       </div>
       <div class="card-body rounded text-white">
         <h2 class="card-title" id="title-game">${titleGame}</h2>
-        <p id="game-description"></p>
+        <p id="game-description" maxlength="50"></p>
         <h3 class="card-text" id="rating-game">Rating: ${ratingGame}/5</h3>
-        <h3 id="release-movie" class="card-text">${releaseGame}</h3>
+        <h3 class="card-text">${releaseGame}</h3>
+        <p>Video Game data from <a href="https://rawg.io/">RAWG.io</a></p>
       </div>
     `);
 

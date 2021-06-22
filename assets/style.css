@@ -50,7 +50,7 @@ h1 {
   background-color: #985cff;
   border-color: #985cff;
 }
-
+/* 
 .glow {
   font-size: 80px;
   color: #fff;
@@ -66,7 +66,7 @@ h1 {
   }
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
       0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -82,12 +82,12 @@ h1 {
   font-size: 40px;
   color: #fff;
   text-align: center;
-  -webkit-animation: directions 1s ease-in-out infinite alternate;
-  -moz-animation: directions 1s ease-in-out infinite alternate;
-  animation: directions 1s ease-in-out infinite alternate;
+  -webkit-animation: directions 4s ease-in-out infinite alternate;
+  -moz-animation: directions 4s ease-in-out infinite alternate;
+  animation: directions 4s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes directions {
+@keyframes directions {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #250066,
       0 0 40px #250066, 0 0 50px #250066, 0 0 60px #250066, 0 0 70px #250066;
@@ -97,4 +97,4 @@ h1 {
     text-shadow: 0 0 20px #fff, 0 0 30px #985cff, 0 0 40px #985cff,
       0 0 50px #985cff, 0 0 60px #985cff, 0 0 70px #985cff, 0 0 80px #985cff;
   }
-}
+} */
