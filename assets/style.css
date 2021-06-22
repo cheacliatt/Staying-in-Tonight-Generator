@@ -11,7 +11,8 @@ body {
 }
 
 #directions {
-  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card {
@@ -21,16 +22,20 @@ body {
 }
 
 h2 {
-  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3 {
-  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h5 {
-  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Hind Madurai', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1 {
-  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Yeseva One', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* trying to shrink image size to hopefully load faster*/
 #game-poster {
@@ -38,7 +43,8 @@ h1 {
 }
 
 .btn-lg {
-  font-family: 'Cooper Black', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Cooper Black', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #250066;
   border-radius: 10px;
   border-color: #985cff;
@@ -50,14 +56,16 @@ h1 {
   background-color: #985cff;
   border-color: #985cff;
 }
-/* 
+
 .glow {
   font-size: 80px;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -66,7 +74,7 @@ h1 {
   }
 }
 
-@keyframes glow {
+/* @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
       0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -76,18 +84,20 @@ h1 {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-}
+} */
 
 .directions {
   font-size: 40px;
   color: #fff;
   text-align: center;
-  -webkit-animation: directions 4s ease-in-out infinite alternate;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #250066,
+      0 0 40px #250066, 0 0 50px #250066, 0 0 60px #250066, 0 0 70px #250066;
+  /* -webkit-animation: directions 4s ease-in-out infinite alternate;
   -moz-animation: directions 4s ease-in-out infinite alternate;
-  animation: directions 4s ease-in-out infinite alternate;
+  animation: directions 4s ease-in-out infinite alternate; */
 }
 
-@keyframes directions {
+/* @keyframes directions {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #250066,
       0 0 40px #250066, 0 0 50px #250066, 0 0 60px #250066, 0 0 70px #250066;
